@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content+"width=device-width, intial-scale=1.0">
+    <title>Latihan Soal Pengetahuan Umum</title>
+
+    <!--link css-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--link icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <hi>Laihan Soal Pengetahuan Umum</h1>
+
+        <div id="start-screen" class="screen active">
+            <h2>Mulai latihan</h2>
+            <div class="input-group">
+                <label for="nama"><1 class="fas fa-user"></1> Nama:</label>
+                <input type="text" id="nama" placeholder="Masukkan nama Anda" required>
+            </div>
+            <div class="input group">
+                <label for="kelas"><i class="fas fa-graduation-cap"><i> Kelas:</label>
+                <input type="text" id="kelas" placeholder="Masukkan kelas Anda" required>
+            </div>
+            <butoon id="start-quiz-btn" class="btn primary-btn">Mulai Kuis <i class="fas fa-play"></i></button>
+        </div>
+
+        <div id="quiz-screen" class="screen">
+            <p class="quetion-counter">Soal <span id="current-question-number">1</span> dari 10</p>
+            <h2 id="question">Pertanyaan akan muncul di sini?</h2>
+            <div class="option">
+            </div>
+            <button id="next-question-btn" class="btn secondary-btn" disabled>Soal Selanjutnya <i
+                    class="fas fa-arrow-right"></i></button>
+            </div>
+
+            <div id="result_screen" class="screen">
+                <h2>Hasil Latihan Soal</h2>
+                <p><strong><i class="fas fa-user"></i> Nama:</strong> <span id="result-nama"></span></p>
+                <p><strong><i class="fas fa-graduation-cap"></i> Kelas:</strong> <span id="result-kelas"></span></p>
+                <p><strong><i class="fas fa-star"></i> Skor Keseluruhan:</strong> <span id="score">0</span><p>
+                <p><strong><i class="fas fa-check-circle"><i> Jawaban Benar:</strong> <span id="correct-answers">0</span>
+                </p>
+                <p><strong><i class="fas fa-times-circle"></i> Jawaban Salah:</strong> <span id="wrong answers">0</span></p>
+                <p><strong><i class="fas fa-clipboard-check"><</i> Status:</strong> <span id="status"></span></p>
+                <button id="restart-quiz-btn" class="btn success-btn">Ulangi Kuis <i class="fas fa-redo"></i></button>
+            </div>
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+
+    </html>
